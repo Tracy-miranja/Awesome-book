@@ -1,12 +1,12 @@
 let bookCollection = [];
 
-const bookList = document.getElementById("book-list");
-const bookTitle = document.getElementById("book-title");
-const bookAuthor = document.getElementById("book-author");
-const addBookBtn = document.getElementById("add-book-btn");
+const bookList = document.getElementById('book-list');
+const bookTitle = document.getElementById('book-title');
+const bookAuthor = document.getElementById('book-author');
+const addBookBtn = document.getElementById('add-book-btn');
 
-if (localStorage.getItem("bookCollection")) {
-  bookCollection = JSON.parse(localStorage.getItem("bookCollection"));
+if (localStorage.getItem('bookCollection')) {
+  bookCollection = JSON.parse(localStorage.getItem('bookCollection'));
   // eslint-disable-next-line no-use-before-define
   renderBookList();
 }
@@ -17,8 +17,8 @@ function addBook() {
   bookCollection.push({ title, author });
   // eslint-disable-next-line no-use-before-define
   renderBookList();
-  bookTitle.value = "";
-  bookAuthor.value = "";
+  bookTitle.value = '';
+  bookAuthor.value = '';
   // eslint-disable-next-line no-use-before-define
   saveBookCollection();
 }
@@ -32,23 +32,23 @@ function removeBook(index) {
 }
 
 function renderBookList() {
-  bookList.innerHTML = "";
+  bookList.innerHTML = '';
   bookCollection.forEach((book, index) => {
-    const bookItem = document.createElement("div");
-    bookItem.classList.add("book-item");
+    const bookItem = document.createElement('div');
+    bookItem.classList.add('book-item');
 
-    const title = document.createElement("div");
-    title.classList.add("book-title");
+    const title = document.createElement('div');
+    title.classList.add('book-title');
     title.innerHTML = book.title;
 
-    const author = document.createElement("div");
+    const author = document.createElement('div');
     author.innerHTML = `by ${book.author}`;
 
-    const removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    const removeBtn = document.createElement('button');
+    removeBtn.innerHTML = 'Remove';
     removeBtn.onclick = () => removeBook(index);
 
-    const hr = document.createElement("hr");
+    const hr = document.createElement('hr');
 
     bookItem.appendChild(title);
     bookItem.appendChild(author);
@@ -60,7 +60,7 @@ function renderBookList() {
 }
 
 function saveBookCollection() {
-  localStorage.setItem("bookCollection", JSON.stringify(bookCollection));
+  localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 }
 
-addBookBtn.addEventListener("click", addBook);
+addBookBtn.addEventListener('click', addBook);
