@@ -47,7 +47,7 @@ One attachment
  
 ## 🚀 Live Demo <a name="live-demo"></a>
  
-- [<a href="#">coming soon...]
+- [<a href="#">Coming soon...]
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
@@ -97,9 +97,11 @@ To run the project, open index.html in your text editor,right-click and open wit
 - Twitter: [@twitterhandle](https://twitter.com/tracymiranja)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/tracymiranja)
 
-- GitHub: [@githubhandle](https://github.com/Queenter-Juma)
-- Twitter: [@twitterhandle](https://twitter.com/Queenter-Juma)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Queenter-Juma)
+👤 **Queenter Juma**
+
+- GitHub:(https://github.com/QueenterJuma)
+- Twitter: (https://twitter.com/QueenJumah)
+- LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
