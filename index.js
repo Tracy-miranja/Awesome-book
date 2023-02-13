@@ -2,14 +2,14 @@
 let bookCollection = [];
 
 // Get references to UI elements
-const bookList = document.getElementById("book-list");
-const bookTitle = document.getElementById("book-title");
-const bookAuthor = document.getElementById("book-author");
-const addBookBtn = document.getElementById("add-book-btn");
+const bookList = document.getElementById('book-list');
+const bookTitle = document.getElementById('book-title');
+const bookAuthor = document.getElementById('book-author');
+const addBookBtn = document.getElementById('add-book-btn');
 
 // Load the book collection from local storage (if it exists)
-if (localStorage.getItem("bookCollection")) {
-  bookCollection = JSON.parse(localStorage.getItem("bookCollection"));
+if (localStorage.getItem('bookCollection')) {
+  bookCollection = JSON.parse(localStorage.getItem('bookCollection'));
   renderBookList();
 }
 
@@ -19,8 +19,8 @@ function addBook() {
   const author = bookAuthor.value;
   bookCollection.push({ title, author });
   renderBookList();
-  bookTitle.value = "";
-  bookAuthor.value = "";
+  bookTitle.value = '';
+  bookAuthor.value = '';
   saveBookCollection();
 }
 
@@ -33,12 +33,12 @@ function removeBook(index) {
 
 // Function to render the book list in the UI
 function renderBookList() {
-  bookList.innerHTML = "";
+  bookList.innerHTML = '';
   bookCollection.forEach((book, index) => {
-    const bookItem = document.createElement("div");
+    const bookItem = document.createElement('div');
     bookItem.innerHTML = `${book.title} by ${book.author}`;
-    const removeBtn = document.createElement("button");
-    removeBtn.innerHTML = "Remove";
+    const removeBtn = document.createElement('button');
+    removeBtn.innerHTML = 'Remove';
     removeBtn.onclick = () => removeBook(index);
     bookItem.appendChild(removeBtn);
     bookList.appendChild(bookItem);
@@ -47,8 +47,8 @@ function renderBookList() {
 
 // Function to save the book collection to local storage
 function saveBookCollection() {
-  localStorage.setItem("bookCollection", JSON.stringify(bookCollection));
+  localStorage.setItem('bookCollection', JSON.stringify(bookCollection));
 }
 
 // Add an event listener to the "Add" button to add a new book to the collection
-addBookBtn.addEventListener("click", addBook);
+addBookBtn.addEventListener('click', addBook);
