@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div id="book-collection">
-      <h2>Awesome Books</h2>
+    <div class="collection" id="book-collection">
+      <h2 class="book-heading">Awesome Books</h2>
       <div id="book-list"></div>
       <h3>Add a new book</h3>
-      <label for="book-title">Book title:</label>
-      <input type="text" id="book-title" name="book-title" />
+      <label for="book-title"></label>
+      <input type="text" id="book-title" name="book-title" placeholder="Title" />
       <br /><br />
-      <label for="book-author">Author:</label>
-      <input type="text" id="book-author" name="book-author" />
+      <label for="book-author"></label>
+      <input type="text" id="book-author" name="book-author" placeholder="Author" />
       <br /><br />
-      <button id="add-book-btn">Add</button>
+      <button class="add-btn" id="add-book-btn">Add</button>
     </div>
     <script src="index.js"></script>
   </body>

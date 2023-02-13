@@ -1,0 +1,13 @@
+* {
+  margin: 2px;
+  background-color: #fff;
+}
+
+.add-btn {
+  margin-left: 6px;
+}
+
+.book-heading {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
