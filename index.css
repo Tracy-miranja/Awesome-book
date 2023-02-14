@@ -11,3 +11,36 @@
   margin-bottom: 10px;
   font-size: 28px;
 }
+
+.book-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.book-title {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.book-author {
+  margin-right: 10px;
+}
+
+.remove-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+  padding: 10px;
+  /* float: right; */
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
