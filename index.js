@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -8,17 +10,17 @@ class Book {
 class BookCollection {
   constructor() {
     this.collection = [];
-    this.bookList = document.getElementById("book-list");
-    this.bookTitle = document.getElementById("book-title");
-    this.bookAuthor = document.getElementById("book-author");
-    this.addBookBtn = document.getElementById("add-book-btn");
+    this.bookList = document.getElementById('book-list');
+    this.bookTitle = document.getElementById('book-title');
+    this.bookAuthor = document.getElementById('book-author');
+    this.addBookBtn = document.getElementById('add-book-btn');
 
-    if (localStorage.getItem("bookCollection")) {
-      this.collection = JSON.parse(localStorage.getItem("bookCollection"));
+    if (localStorage.getItem('bookCollection')) {
+      this.collection = JSON.parse(localStorage.getItem('bookCollection'));
       this.renderBookList();
     }
 
-    this.addBookBtn.addEventListener("click", this.addBook.bind(this));
+    this.addBookBtn.addEventListener('click', this.addBook.bind(this));
   }
 
   addBook() {
@@ -28,8 +30,8 @@ class BookCollection {
     this.collection.push(book);
     this.renderBookList();
     this.saveBookCollection();
-    this.bookTitle.value = "";
-    this.bookAuthor.value = "";
+    this.bookTitle.value = '';
+    this.bookAuthor.value = '';
   }
 
   removeBook(index) {
@@ -39,26 +41,29 @@ class BookCollection {
   }
 
   renderBookList() {
-    this.bookList.innerHTML = "";
+    this.bookList.innerHTML = '';
     this.collection.forEach((book, index) => {
-      const bookItem = document.createElement("div");
-      bookItem.classList.add("book-item");
+      const bookItem = document.createElement('div');
+      bookItem.classList.add('book-item');
+      const infoContainer = document.createElement('div');
+      infoContainer.classList.add('info-container');
 
-      const title = document.createElement("div");
-      title.classList.add("book-title");
+      const title = document.createElement('div');
+      title.classList.add('book-title');
       title.innerHTML = book.title;
 
-      const author = document.createElement("div");
+      const author = document.createElement('div');
       author.innerHTML = `by ${book.author}`;
 
-      const removeBtn = document.createElement("button");
-      removeBtn.innerHTML = "Remove";
+      const removeBtn = document.createElement('button');
+      removeBtn.innerHTML = 'Remove';
       removeBtn.onclick = () => this.removeBook(index);
 
-      const hr = document.createElement("hr");
+      const hr = document.createElement('hr');
 
-      bookItem.appendChild(title);
-      bookItem.appendChild(author);
+      infoContainer.appendChild(title);
+      infoContainer.appendChild(author);
+      bookItem.appendChild(infoContainer);
       bookItem.appendChild(removeBtn);
       bookItem.appendChild(hr);
 
@@ -67,7 +72,7 @@ class BookCollection {
   }
 
   saveBookCollection() {
-    localStorage.setItem("bookCollection", JSON.stringify(this.collection));
+    localStorage.setItem('bookCollection', JSON.stringify(this.collection));
   }
 }
 
