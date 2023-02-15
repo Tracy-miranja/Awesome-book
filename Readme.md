@@ -102,7 +102,7 @@ To run the project, open index.html in your text editor,right-click and open wit
 - GitHub:(https://github.com/QueenterJuma)
 - Twitter: (https://twitter.com/QueenJumah)
 - LinkedIn:(https://www.linkedin.com/in/queenter-juma-54a0b1222/)
- 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 <!-- FUTURE FEATURES -->
@@ -152,7 +152,7 @@ I would like to thank  all my Mricronauts partners for support and microverse fo
  
 ## 📝 License <a name="license"></a>
  
-This project is [MIT](https://github.com/Tracy-miranja/HTML-CSS-JavaScript-capstone-project/blob/add-license-1/LICENCE.md licensed.
+This project is [MIT](https://github.com/Tracy-miranja/Awesome-book/blob/main/LICENCE licensed.
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 README.md
