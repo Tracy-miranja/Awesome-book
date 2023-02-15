@@ -1,6 +1,27 @@
 * {
   margin: 2px;
   background-color: #fff;
+  padding: 5px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.head ul {
+  display: flex;
+  text-align: center;
+}
+
+.head ul li {
+  text-decoration: none;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 10px;
 }
 
 #book-list {
@@ -66,4 +87,31 @@ input {
 
 .tr {
   margin-left: 100px;
+}
+
+#contact-section {
+  text-align: center;
+}
+
+ul span {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: antiquewhite;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#dateTime {
+  text-align: center;
 }
