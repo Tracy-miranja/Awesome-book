@@ -107,3 +107,6 @@ ul span {
 .hidden {
   display: none;
 }
+#dateTime{
+  text-align: center;
+}
